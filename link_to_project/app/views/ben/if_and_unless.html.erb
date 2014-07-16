@@ -1,0 +1,11 @@
+<%= render '/ben/redsox' %>
+
+<div class="container">
+
+<h1> link_to_if and link_to_unless </h1>
+
+<p>Here's an example of linked_to_if. You'll see <%= link_to_if(8 > 7, "this link to ESPN", "http://espn.go.com/") %> become active and inactive as I change the conditional. One use case here is user-based links. You might want to have active links for users and non-active for non-users. </p>
+
+<p> Same deal (except opposite) for linked_to_unless. You'll see <%= link_to_unless(9 > 7, "this link to CNN", "http://zencephalon.com/index") %> become active and inactive as I change the conditional.</p>
+
+</div>

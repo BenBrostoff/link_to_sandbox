@@ -14,10 +14,15 @@
  *= require_self
  */
 
+#green{
+  color: green;
+}
+
 img {
   height: 100px;
   width:100px;
 }
+
 .container{
   margin: 0 auto;
   padding: 0 1em;

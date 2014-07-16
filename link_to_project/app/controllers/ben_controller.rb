@@ -9,4 +9,8 @@ class BenController < ApplicationController
   def contact
   end
 
+  def example
+    @example = params[:id]
+  end
+  
 end

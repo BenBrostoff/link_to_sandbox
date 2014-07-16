@@ -3,7 +3,6 @@ Rails.application.routes.draw do
 
   get '/ben/about' => 'ben#about', :as => :about
   get '/ben/contact' => 'ben#contact', :as => :contact
-  get '/ben/example/:id' => 'ben#example'
-
+  get '/ben/:id' => 'ben#example', :as => :example
 
 end

@@ -13,3 +13,34 @@
  *= require_tree .
  *= require_self
  */
+
+.container{
+  margin: 0 auto;
+  padding: 0 1em;
+  max-width: 37em;
+  position: relative;
+  width: 61.8%;
+}
+
+h1{
+  font-style: italic;
+  color: #36AECC;
+}
+
+body {
+  font-family: 'Volkhov';
+  font: 'Georgia';
+}
+
+p{
+  font-size: 1.2em;
+}
+
+a{
+  text-decoration: none;
+  color: gray;
+}
+
+a:hover{
+  color: #36AECC;
+}

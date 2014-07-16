@@ -4,8 +4,17 @@
 
 <h1> Adjectives </h1>
 
-<% @adjectives.each do |adj| %>
+<p> Say something nice about Ben. </p>
+
+<p> Ben is super... </p>
+<%= form_for :adjective do |f| %>
+  <%= f.text_field :name %><br />
+  <%= f.submit "Say it!" %>
+<% end %>
+
+<% @adjectives.reverse.each do |adj| %>
   <p> Ben is super <%=adj.name%>.</p>
+  <p> <%=link_to "I disagree", example_path(adj.id), :method => :delete %> </p>
 <%end%>
 
 </div>

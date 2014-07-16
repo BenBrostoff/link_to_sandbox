@@ -18,12 +18,14 @@ class BenController < ApplicationController
   end
 
   def create
+    Adjective.create(name: params[:adjective][:name])
+    redirect_to :adjectives
   end
 
   def destroy
     @adjective = Adjective.find(params[:id])
     @adjective.destroy
-    redirect_to :root
+    redirect_to :adjectives
   end
 
 

@@ -13,6 +13,13 @@ class BenController < ApplicationController
     @example = params[:id]
   end
 
+  def adjectives
+    @adjectives = Adjective.all
+  end
+
+  def create
+  end
+
   def destroy
     @adjective = Adjective.find(params[:id])
     @adjective.destroy
@@ -21,3 +28,22 @@ class BenController < ApplicationController
 
 
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

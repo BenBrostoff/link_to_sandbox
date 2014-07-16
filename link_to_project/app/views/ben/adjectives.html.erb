@@ -1,0 +1,11 @@
+<%= render '/ben/redsox' %>
+
+<div class="container">
+
+<h1> Adjectives </h1>
+
+<% @adjectives.each do |adj| %>
+  <p> Ben is super <%=adj.name%>.</p>
+<%end%>
+
+</div>

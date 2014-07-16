@@ -25,7 +25,7 @@ class BenController < ApplicationController
   def destroy
     @adjective = Adjective.find(params[:id])
     @adjective.destroy
-    redirect_to :adjectives
+    redirect_to :adjectives 
   end
 
 
